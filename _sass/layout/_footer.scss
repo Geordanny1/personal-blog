@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .page__footer {
+  font-size: $type-size-8;
   @include clearfix;
-  background-color: var(--global-footer-bg-color);
   color: var(--global-text-color-light);
 
   float: left;

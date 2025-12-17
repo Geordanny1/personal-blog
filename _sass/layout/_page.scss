@@ -23,7 +23,9 @@
     @include suffix(2 of 12);
   }
 
-  .page__inner-wrap {
+  .page__inner-wrap { 
+    font-size: 1.2rem !important;
+
     @include full();
 
     .page__content,
@@ -31,6 +33,11 @@
     .page__share {
       @include full();
     }
+  }
+
+  @include breakpoint($large) {
+    padding-left: 4rem;
+    padding-right: 0;
   }
 }
 
@@ -330,6 +337,7 @@
   @include breakpoint($large) {
     width: 100px;
     height: 100px;
+    color: green;
   }
 }
 
