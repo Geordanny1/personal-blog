@@ -69,11 +69,6 @@ $sidebar-screen-min-width   : 1024px;
   }
 }
 
-.page__footer {
-  color: #ffffff !important;
-}
-
-.page__footer-follow .social-icons i,
-.page__footer-follow .social-icons .svg-inline--fa {
-  color: inherit;
+footer {
+  color: #ffffff;
 }
