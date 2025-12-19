@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "contrast"
+site_theme               : "sunrise"
 title                    : "Geordanny's blog"
 title_separator          : "-"
 name                     : &name "Geordanny"

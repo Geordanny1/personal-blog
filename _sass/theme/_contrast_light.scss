@@ -2,22 +2,22 @@
    CONTRAST THEME - LIGHT VERSION
    ========================================================================== */
 /* Color codes used for the theme */
-$contrast-primary           : #b60000;
-$contrast-dark-primary      : mix(#000, $contrast-primary, 40%);
-$contrast-darker-primary    : mix(#000, $contrast-primary, 60%);
-$contrast-light-primary     : mix(#fff, $contrast-primary, 50%);
-$contrast-lighter-primary   : mix(#fff, $contrast-primary, 90%);
-$contrast-background        : #ffffff;
-$contrast-background-light  : #fafafa;
-$contrast-background-lighter: #ffffff;
-$contrast-text              : #000000;
-$contrast-text-muted        : #404040;
-$contrast-link              : #0000ff;
-$contrast-link-dark         : #0000cc;
-$contrast-link-light        : #3333ff;
-$contrast-footer            : #000000;
-$contrast-border            : #c0c0c0;
-$contrast-border-dark       : #808080;
+$primary-color              : #b60000;
+$dark-primary-color         : mix(#000, $primary-color, 40%);
+$darker-primary-color       : mix(#000, $primary-color, 60%);
+$light-primary-color        : mix(#fff, $primary-color, 50%);
+$lighter-primary-color      : mix(#fff, $primary-color, 90%);
+$background                 : #ffffff;
+$background-light           : #fafafa;
+$background-lighter        : #ffffff;
+$text                      : #000000;
+$text-muted                : #404040;
+$link                      : #0000ff;
+$link-dark                 : #0000cc;
+$link-light                : #3333ff;
+$footer                    : #000000;
+$border                    : #c0c0c0;
+$border-dark               : #808080;
 
 /* Color codes used for the site */
 $danger-color               : #ff0000;
@@ -38,22 +38,22 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Light theme for the site */
 :root {
-    --global-base-color                 : #{$contrast-text};
-    --global-bg-color                   : #{$contrast-background};
-    --global-footer-bg-color            : #{$contrast-footer};
-    --global-border-color               : #{$contrast-border};
-    --global-dark-border-color          : #{$contrast-border-dark};
-    --global-code-background-color      : #{$contrast-background-light};
-    --global-code-text-color            : #{$contrast-text};
-    --global-fig-caption-color          : #{$contrast-text-muted};
-    --global-link-color                 : #{$contrast-link};
-    --global-link-color-hover           : #{$contrast-link-dark};
-    --global-link-color-visited         : #{$contrast-primary};
-    --global-masthead-link-color        : #{$contrast-text};
-    --global-masthead-link-color-hover  : #{$contrast-text-muted};
-    --global-text-color                 : #{$contrast-text};
-    --global-text-color-light           : #{$contrast-text-muted};
-    --global-thead-color                : #{$contrast-border};
+  --global-base-color                 : #{$text};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-dark};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$primary-color};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$text-muted};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$border};
 }
 
 /* Override notice colors for high contrast */
@@ -64,8 +64,8 @@ $sidebar-screen-min-width   : 1024px;
   .notice--warning,
   .notice--success,
   .notice--danger {
-    color: #{$contrast-text};
-    border-color: #{$contrast-text};
+    color: #{$text};
+    border-color: #{$text};
   }
 }
 

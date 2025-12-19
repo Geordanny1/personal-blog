@@ -2,23 +2,23 @@
    DIRT THEME - DARK VERSION
    ========================================================================== */
 /* Color codes used for the theme */
-$dirt-dark-primary          : #b49368;
-$dirt-dark-dark-primary     : mix(#000, $dirt-dark-primary, 40%);
-$dirt-dark-darker-primary   : mix(#000, $dirt-dark-primary, 60%);
-$dirt-dark-light-primary    : mix(#fff, $dirt-dark-primary, 50%);
-$dirt-dark-lighter-primary  : mix(#fff, $dirt-dark-primary, 90%);
-$dirt-dark-bg               : #231e18;
-$dirt-dark-bg-light         : #302b25;
-$dirt-dark-bg-lighter       : #48413a;
-$dirt-dark-text             : #e4d4c8;
-$dirt-dark-text-muted       : #cabcb1;
-$dirt-dark-link             : #d7c8bc;
-$dirt-dark-link-hover       : #e4d4c8;
-$dirt-dark-link-visited     : #b4a490;
-$dirt-dark-footer           : #302b25;
-$dirt-dark-border           : #48413a;
-$dirt-dark-border-light     : #5c5346;
-$dirt-dark-accent           : #b49368;
+$primary-color              : #b49368;
+$dark-primary-color         : mix(#000, $primary-color, 40%);
+$darker-primary-color       : mix(#000, $primary-color, 60%);
+$light-primary-color        : mix(#fff, $primary-color, 50%);
+$lighter-primary-color      : mix(#fff, $primary-color, 90%);
+$background                 : #231e18;
+$background-light           : #302b25;
+$background-lighter         : #48413a;
+$text                      : #e4d4c8;
+$text-muted                : #cabcb1;
+$link                      : #d7c8bc;
+$link-dark                 : #e4d4c8;
+$link-light                : #b4a490;
+$footer                    : #302b25;
+$border                    : #48413a;
+$border-light              : #5c5346;
+$accent-color              : #b49368;
 
 /* Color codes used for the site */
 $danger-color               : #d35c5c;
@@ -39,27 +39,27 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$dirt-dark-bg};
-    --global-bg-color                   : #{$dirt-dark-bg};
-    --global-footer-bg-color            : #{$dirt-dark-footer};
-    --global-border-color               : #{$dirt-dark-border};
-    --global-dark-border-color          : #{$dirt-dark-border-light};
-    --global-code-background-color      : #{$dirt-dark-bg-light};
-    --global-code-text-color            : #{$dirt-dark-text-muted};
-    --global-fig-caption-color          : #{$dirt-dark-text-muted};
-    --global-link-color                 : #{$dirt-dark-link};
-    --global-link-color-hover           : #{$dirt-dark-link-hover};
-    --global-link-color-visited         : #{$dirt-dark-link-visited};
-    --global-masthead-link-color        : #{$dirt-dark-text};
-    --global-masthead-link-color-hover  : #{$dirt-dark-accent};
-    --global-text-color                 : #{$dirt-dark-text};
-    --global-text-color-light           : #{$dirt-dark-text-muted};
-    --global-thead-color                : #{$dirt-dark-bg-lighter};
+  --global-base-color                 : #{$background};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-light};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text-muted};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$accent-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$background-lighter};
 }
 
 /* Footer styling for dark mode */
 html[data-theme="dark"] {
   footer {
-    color: #{$dirt-dark-text};
+    color: #{$text};
   }
 }
