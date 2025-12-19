@@ -1,0 +1,79 @@
+/* ==========================================================================
+   CONTRAST THEME - LIGHT VERSION
+   ========================================================================== */
+/* Color codes used for the theme */
+$contrast-primary           : #b60000;
+$contrast-dark-primary      : mix(#000, $contrast-primary, 40%);
+$contrast-darker-primary    : mix(#000, $contrast-primary, 60%);
+$contrast-light-primary     : mix(#fff, $contrast-primary, 50%);
+$contrast-lighter-primary   : mix(#fff, $contrast-primary, 90%);
+$contrast-background        : #ffffff;
+$contrast-background-light  : #fafafa;
+$contrast-background-lighter: #ffffff;
+$contrast-text              : #000000;
+$contrast-text-muted        : #404040;
+$contrast-link              : #0000ff;
+$contrast-link-dark         : #0000cc;
+$contrast-link-light        : #3333ff;
+$contrast-footer            : #000000;
+$contrast-border            : #c0c0c0;
+$contrast-border-dark       : #808080;
+
+/* Color codes used for the site */
+$danger-color               : #ff0000;
+$info-color                 : #0000ff;
+$notice-color               : #000000;
+$success-color              : #008000;
+$warning-color              : #ff8800;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Light theme for the site */
+:root {
+    --global-base-color                 : #{$contrast-text};
+    --global-bg-color                   : #{$contrast-background};
+    --global-footer-bg-color            : #{$contrast-footer};
+    --global-border-color               : #{$contrast-border};
+    --global-dark-border-color          : #{$contrast-border-dark};
+    --global-code-background-color      : #{$contrast-background-light};
+    --global-code-text-color            : #{$contrast-text};
+    --global-fig-caption-color          : #{$contrast-text-muted};
+    --global-link-color                 : #{$contrast-link};
+    --global-link-color-hover           : #{$contrast-link-dark};
+    --global-link-color-visited         : #{$contrast-primary};
+    --global-masthead-link-color        : #{$contrast-text};
+    --global-masthead-link-color-hover  : #{$contrast-text-muted};
+    --global-text-color                 : #{$contrast-text};
+    --global-text-color-light           : #{$contrast-text-muted};
+    --global-thead-color                : #{$contrast-border};
+}
+
+/* Override notice colors for high contrast */
+.page__content {
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    color: #{$contrast-text};
+    border-color: #{$contrast-text};
+  }
+}
+
+.page__footer {
+  color: #ffffff !important;
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}

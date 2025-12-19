@@ -1,0 +1,65 @@
+/* ==========================================================================
+   DIRT THEME - DARK VERSION
+   ========================================================================== */
+/* Color codes used for the theme */
+$dirt-dark-primary          : #b49368;
+$dirt-dark-dark-primary     : mix(#000, $dirt-dark-primary, 40%);
+$dirt-dark-darker-primary   : mix(#000, $dirt-dark-primary, 60%);
+$dirt-dark-light-primary    : mix(#fff, $dirt-dark-primary, 50%);
+$dirt-dark-lighter-primary  : mix(#fff, $dirt-dark-primary, 90%);
+$dirt-dark-bg               : #231e18;
+$dirt-dark-bg-light         : #302b25;
+$dirt-dark-bg-lighter       : #48413a;
+$dirt-dark-text             : #e4d4c8;
+$dirt-dark-text-muted       : #cabcb1;
+$dirt-dark-link             : #d7c8bc;
+$dirt-dark-link-hover       : #e4d4c8;
+$dirt-dark-link-visited     : #b4a490;
+$dirt-dark-footer           : #302b25;
+$dirt-dark-border           : #48413a;
+$dirt-dark-border-light     : #5c5346;
+$dirt-dark-accent           : #b49368;
+
+/* Color codes used for the site */
+$danger-color               : #d35c5c;
+$info-color                 : #88a4d3;
+$notice-color               : #ca7f32;
+$success-color              : #b7ba53;
+$warning-color              : #e0ac16;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$dirt-dark-bg};
+    --global-bg-color                   : #{$dirt-dark-bg};
+    --global-footer-bg-color            : #{$dirt-dark-footer};
+    --global-border-color               : #{$dirt-dark-border};
+    --global-dark-border-color          : #{$dirt-dark-border-light};
+    --global-code-background-color      : #{$dirt-dark-bg-light};
+    --global-code-text-color            : #{$dirt-dark-text-muted};
+    --global-fig-caption-color          : #{$dirt-dark-text-muted};
+    --global-link-color                 : #{$dirt-dark-link};
+    --global-link-color-hover           : #{$dirt-dark-link-hover};
+    --global-link-color-visited         : #{$dirt-dark-link-visited};
+    --global-masthead-link-color        : #{$dirt-dark-text};
+    --global-masthead-link-color-hover  : #{$dirt-dark-accent};
+    --global-text-color                 : #{$dirt-dark-text};
+    --global-text-color-light           : #{$dirt-dark-text-muted};
+    --global-thead-color                : #{$dirt-dark-bg-lighter};
+}
+
+/* Footer styling for dark mode */
+html[data-theme="dark"] {
+  footer {
+    color: #{$dirt-dark-text};
+  }
+}

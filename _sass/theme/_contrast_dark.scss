@@ -1,0 +1,77 @@
+/* ==========================================================================
+   CONTRAST THEME - DARK VERSION
+   ========================================================================== */
+/* Color codes used for the theme */
+$contrast-dark-primary      : #ff6c60;
+$contrast-dark-bg           : #000000;
+$contrast-dark-bg-light     : #1a1a1a;
+$contrast-dark-bg-lighter   : #2a2a2a;
+$contrast-dark-text         : #ffffff;
+$contrast-dark-text-muted   : #d9d9d9;
+$contrast-dark-link         : #96cbfe;
+$contrast-dark-link-hover   : #c6c5fe;
+$contrast-dark-link-visited : #ff73fd;
+$contrast-dark-footer       : #000000;
+$contrast-dark-border       : #4d4d4d;
+$contrast-dark-border-light : #666666;
+
+/* Color codes used for the site */
+$danger-color               : #ff6c60;
+$info-color                 : #96cbfe;
+$notice-color               : #ffffff;
+$success-color              : #a8ff60;
+$warning-color              : #e9c062;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$contrast-dark-bg};
+    --global-bg-color                   : #{$contrast-dark-bg};
+    --global-footer-bg-color            : #{$contrast-dark-footer};
+    --global-border-color               : #{$contrast-dark-border};
+    --global-dark-border-color          : #{$contrast-dark-border-light};
+    --global-code-background-color      : #{$contrast-dark-bg-light};
+    --global-code-text-color            : #{$contrast-dark-text-muted};
+    --global-fig-caption-color          : #{$contrast-dark-text-muted};
+    --global-link-color                 : #{$contrast-dark-link};
+    --global-link-color-hover           : #{$contrast-dark-link-hover};
+    --global-link-color-visited         : #{$contrast-dark-link-visited};
+    --global-masthead-link-color        : #{$contrast-dark-text};
+    --global-masthead-link-color-hover  : #{$contrast-dark-link-hover};
+    --global-text-color                 : #{$contrast-dark-text};
+    --global-text-color-light           : #{$contrast-dark-text-muted};
+    --global-thead-color                : #{$contrast-dark-bg-lighter};
+}
+
+/* Override notice colors for high contrast in dark mode */
+html[data-theme="dark"] {
+  .page__content {
+    .notice,
+    .notice--primary,
+    .notice--info,
+    .notice--warning,
+    .notice--success,
+    .notice--danger {
+      color: #{$contrast-dark-text};
+      border-color: #{$contrast-dark-text};
+    }
+  }
+
+  .page__footer {
+    color: #ffffff !important;
+  }
+
+  .page__footer-follow .social-icons i,
+  .page__footer-follow .social-icons .svg-inline--fa {
+    color: inherit;
+  }
+}

@@ -1,0 +1,131 @@
+/* ==========================================================================
+   MINT THEME - LIGHT VERSION
+   ========================================================================== */
+/* Color codes used for the theme */
+$mint-primary               : #11999e;
+$mint-dark-primary          : mix(#000, $mint-primary, 40%);
+$mint-darker-primary        : mix(#000, $mint-primary, 60%);
+$mint-light-primary         : mix(#fff, $mint-primary, 50%);
+$mint-lighter-primary       : mix(#fff, $mint-primary, 90%);
+$mint-background            : #f3f6f6;
+$mint-background-light      : #ffffff;
+$mint-background-lighter    : #fafbfb;
+$mint-text                  : #40514e;
+$mint-text-muted            : #5c6d6a;
+$mint-link                  : #11999e;
+$mint-link-dark             : mix(#000, $mint-link, 25%);
+$mint-link-light            : mix(#fff, $mint-link, 25%);
+$mint-footer                : #30e3ca;
+$mint-border                : mix(#fff, #40514e, 75%);
+$mint-border-dark           : mix(#fff, #40514e, 60%);
+
+/* Color codes used for the site */
+$danger-color               : #e74c3c;
+$info-color                 : #11999e;
+$notice-color               : #30e3ca;
+$success-color              : #2ecc71;
+$warning-color              : #f39c12;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Light theme for the site */
+:root {
+    --global-base-color                 : #{$mint-primary};
+    --global-bg-color                   : #{$mint-background};
+    --global-footer-bg-color            : #{$mint-footer};
+    --global-border-color               : #{$mint-border};
+    --global-dark-border-color          : #{$mint-border-dark};
+    --global-code-background-color      : #{$mint-background-light};
+    --global-code-text-color            : #{$mint-darker-primary};
+    --global-fig-caption-color          : #{$mint-text-muted};
+    --global-link-color                 : #{$mint-link};
+    --global-link-color-hover           : #{$mint-link-dark};
+    --global-link-color-visited         : #{$mint-link-light};
+    --global-masthead-link-color        : #{$mint-text};
+    --global-masthead-link-color-hover  : #{$mint-primary};
+    --global-text-color                 : #{$mint-text};
+    --global-text-color-light           : #{$mint-text-muted};
+    --global-thead-color                : #{$mint-lighter-primary};
+}
+
+/* Footer styling */
+.page__footer {
+  color: #ffffff !important;
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+
+/* ==========================================================================
+   MINT THEME - DARK VERSION
+   ========================================================================== */
+/* Color codes used for the theme */
+$mint-dark-primary          : #30e3ca;
+$mint-dark-bg               : #1a2421;
+$mint-dark-bg-light         : #243430;
+$mint-dark-bg-lighter       : #2e443f;
+$mint-dark-text             : #e8f5f3;
+$mint-dark-text-muted       : #b8d5d1;
+$mint-dark-link             : #4effd9;
+$mint-dark-link-hover       : #7cffdf;
+$mint-dark-link-visited     : #2bd4bd;
+$mint-dark-footer           : #0f1614;
+$mint-dark-border           : #2e443f;
+$mint-dark-border-light     : #3d5950;
+$mint-dark-accent           : #30e3ca;
+
+/* Color codes used for the site */
+$danger-color               : #e74c3c;
+$info-color                 : #4effd9;
+$notice-color               : #30e3ca;
+$success-color              : #2ecc71;
+$warning-color              : #f39c12;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$mint-dark-bg};
+    --global-bg-color                   : #{$mint-dark-bg};
+    --global-footer-bg-color            : #{$mint-dark-footer};
+    --global-border-color               : #{$mint-dark-border};
+    --global-dark-border-color          : #{$mint-dark-border-light};
+    --global-code-background-color      : #{$mint-dark-bg-light};
+    --global-code-text-color            : #{$mint-dark-text-muted};
+    --global-fig-caption-color          : #{$mint-dark-text-muted};
+    --global-link-color                 : #{$mint-dark-link};
+    --global-link-color-hover           : #{$mint-dark-link-hover};
+    --global-link-color-visited         : #{$mint-dark-link-visited};
+    --global-masthead-link-color        : #{$mint-dark-text};
+    --global-masthead-link-color-hover  : #{$mint-dark-accent};
+    --global-text-color                 : #{$mint-dark-text};
+    --global-text-color-light           : #{$mint-dark-text-muted};
+    --global-thead-color                : #{$mint-dark-bg-lighter};
+}
+
+/* Footer styling for dark mode */
+html[data-theme="dark"] {
+  footer {
+    color: #{$mint-dark-text};
+  }
+}
+

@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "sunrise"
-title                    : "Goerdanny's blog"
+title                    : "Geordanny's blog"
 title_separator          : "-"
 name                     : &name "Geordanny"
 description              : &description "Colection of "   # Update this with a general description of your site, this is the default if not overridden by a page

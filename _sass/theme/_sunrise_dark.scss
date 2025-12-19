@@ -1,13 +1,25 @@
 /* ==========================================================================
-   SUNRISE DARK THEME (SUNSET)
+   SUNSET THEME 
    ========================================================================== */
-
 /* Color codes used for the theme */
-$gray                       : #b8a590;
-$dark-gray                  : #e8d5b7;
-$darker-gray                : mix(#fff, $gray, 60%);
-$light-gray                 : mix(#000, $gray, 50%);
-$lighter-gray               : mix(#000, $gray, 90%);
+$sunset-primary             : #ff8793;
+$sunset-dark-primary        : #ff5568;
+$sunset-darker-primary      : #d4741f;
+$sunset-light-primary       : #ffb3bb;
+$sunset-lighter-primary     : #ffd4d9;
+$sunset-background          : #1a0f0a;
+$sunset-background-light    : #2d1912;
+$sunset-background-lighter  : #3d2a1a;
+$sunset-text                : #e8d5b7;
+$sunset-text-muted          : #b8a590;
+$sunset-link                : #ff8793;
+$sunset-link-hover          : #ffb3bb;
+$sunset-link-visited        : #ff5568;
+$sunset-footer              : #2d1912;
+$sunset-border              : #3d2a1a;
+$sunset-border-dark         : #5a3f28;
+$sunset-code-bg             : #0d0806;
+$sunset-code-bg-dark        : #0f0907;
 
 /* Color codes used for the site */
 $danger-color               : #ff6b7f;
@@ -26,47 +38,22 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Sunrise dark theme CSS variables */
+/* Sunset dark theme CSS variables */
 html[data-theme="dark"] {
-    --global-base-color                 : #b8a590;
-    --global-bg-color                   : #1a0f0a;
-    --global-footer-bg-color            : #d4741f;
-    --global-border-color               : #3d2a1a;
-    --global-dark-border-color          : #5a3f28;
-    --global-code-background-color      : #0d0806;
-    --global-code-text-color            : #e8d5b7;
-    --global-fig-caption-color          : #b8a590;
-    --global-link-color                 : #ff8793;
-    --global-link-color-hover           : #ff5568;
-    --global-link-color-visited         : #ffb3bb;
-    --global-masthead-link-color        : #e8d5b7;
-    --global-masthead-link-color-hover  : #ffffff;
-    --global-text-color                 : #e8d5b7;
-    --global-text-color-light           : #b8a590;
-    --global-thead-color                : #0f0907;
-}
-
-/* sunset syntax highlighting (base16) */
-$base00: #fdf6e3 !default;
-$base01: #eee8d5 !default;
-$base02: #93a1a1 !default;
-$base03: #839496 !default;
-$base04: #657b83 !default;
-$base05: #586e75 !default;
-$base06: #073642 !default;
-$base07: #002b36 !default;
-$base08: #dc322f !default;
-$base09: #cb4b16 !default;
-$base0a: #b58900 !default;
-$base0b: #859900 !default;
-$base0c: #2aa198 !default;
-$base0d: #268bd2 !default;
-$base0e: #6c71c4 !default;
-$base0f: #d33682 !default;
-
-.author__urls.social-icons i,
-.author__urls.social-icons .svg-inline--fa,
-.page__footer-follow .social-icons i,
-.page__footer-follow .social-icons .svg-inline--fa {
-  color: inherit;
+    --global-base-color                 : #{$sunset-primary};
+    --global-bg-color                   : #{$sunset-background};
+    --global-footer-bg-color            : #{$sunset-footer};
+    --global-border-color               : #{$sunset-border};
+    --global-dark-border-color          : #{$sunset-border-dark};
+    --global-code-background-color      : #{$sunset-code-bg};
+    --global-code-text-color            : #{$sunset-text};
+    --global-fig-caption-color          : #{$sunset-text-muted};
+    --global-link-color                 : #{$sunset-link};
+    --global-link-color-hover           : #{$sunset-link-hover};
+    --global-link-color-visited         : #{$sunset-link-visited};
+    --global-masthead-link-color        : #{$sunset-text};
+    --global-masthead-link-color-hover  : #{$sunset-link-hover};
+    --global-text-color                 : #{$sunset-text};
+    --global-text-color-light           : #{$sunset-text-muted};
+    --global-thead-color                : #{$sunset-background-lighter};
 }

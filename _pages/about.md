@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm geordanny. A current student of computer science at [Nothern Essex Commnuty College](https://necc.edu/).
+I'm Geordanny. A current student of computer science at [Nothern Essex Community College](https://necc.edu/).
 
 In this blog I'm gonna be posting things relate to my interests and my general experience in college .
 

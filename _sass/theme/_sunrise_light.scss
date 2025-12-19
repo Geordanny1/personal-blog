@@ -1,20 +1,30 @@
 /* ==========================================================================
-   SUNRISE LIGHT THEME
+   SUNRISE THEME - LIGHT VERSION
    ========================================================================== */
-
 /* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : #0e2431;
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+$sunrise-primary            : #fc3a52;
+$sunrise-dark-primary       : mix(#000, $sunrise-primary, 40%);
+$sunrise-darker-primary     : mix(#000, $sunrise-primary, 60%);
+$sunrise-light-primary      : mix(#fff, $sunrise-primary, 50%);
+$sunrise-lighter-primary    : mix(#fff, $sunrise-primary, 90%);
+$sunrise-background         : #e8d5b7;
+$sunrise-background-light   : mix(#fff, $sunrise-background, 20%);
+$sunrise-background-lighter : #ffffff;
+$sunrise-text               : #000000;
+$sunrise-text-muted         : #0e2431;
+$sunrise-link               : mix(#000, $sunrise-primary, 10%);
+$sunrise-link-dark          : mix(#000, $sunrise-link, 25%);
+$sunrise-link-light         : mix(#fff, $sunrise-link, 25%);
+$sunrise-footer             : #f9b248;
+$sunrise-border             : mix(#000, $sunrise-background, 20%);
+$sunrise-border-dark        : mix(#000, $sunrise-background, 30%);
 
 /* Color codes used for the site */
-$danger-color               : #fc3a52;
-$info-color                 : #3b9cba;
-$notice-color               : #d67f05;
-$success-color              : #62c462;
-$warning-color              : #d67f05;
+$danger-color               : #cc6666;
+$info-color                 : #81a2be;
+$notice-color               : #de935f;
+$success-color              : #b5bd68;
+$warning-color              : #f0c674;
 
 /* Other basic settings for the template */
 $border-radius              : 4px;
@@ -26,47 +36,22 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Sunrise light theme CSS variables */
+/* Light theme for the site */
 :root {
-    --global-base-color                 : #7a8288;
-    --global-bg-color                   : #e8d5b7;
-    --global-footer-bg-color            : #f9b248;
-    --global-border-color               : #c9b89a;
-    --global-dark-border-color          : #b5a284;
-    --global-code-background-color      : #f0e4cd;
-    --global-code-text-color            : #3d2f1f;
-    --global-fig-caption-color          : #0e2431;
-    --global-link-color                 : #d63043;
-    --global-link-color-hover           : #f35465;
-    --global-link-color-visited         : #a8253a;
-    --global-masthead-link-color        : #000000;
-    --global-masthead-link-color-hover  : #3d3d3d;
-    --global-text-color                 : #000000;
-    --global-text-color-light           : #0e2431;
-    --global-thead-color                : #ead8be;
-}
-
-/* sunrise syntax highlighting (base16) */
-$base00: #1d1f21 !default;
-$base01: #282a2e !default;
-$base02: #373b41 !default;
-$base03: #969896 !default;
-$base04: #b4b7b4 !default;
-$base05: #c5c8c6 !default;
-$base06: #e0e0e0 !default;
-$base07: #ffffff !default;
-$base08: #cc6666 !default;
-$base09: #de935f !default;
-$base0a: #f0c674 !default;
-$base0b: #b5bd68 !default;
-$base0c: #8abeb7 !default;
-$base0d: #81a2be !default;
-$base0e: #b294bb !default;
-$base0f: #a3685a !default;
-
-.author__urls.social-icons i,
-.author__urls.social-icons .svg-inline--fa,
-.page__footer-follow .social-icons i,
-.page__footer-follow .social-icons .svg-inline--fa {
-  color: inherit;
+    --global-base-color                 : #{$sunrise-primary};
+    --global-bg-color                   : #{$sunrise-background};
+    --global-footer-bg-color            : #{$sunrise-footer};
+    --global-border-color               : #{$sunrise-border};
+    --global-dark-border-color          : #{$sunrise-border-dark};
+    --global-code-background-color      : #{$sunrise-background-light};
+    --global-code-text-color            : #{$sunrise-text-muted};
+    --global-fig-caption-color          : #{$sunrise-text-muted};
+    --global-link-color                 : #{$sunrise-link};
+    --global-link-color-hover           : #{$sunrise-link-light};
+    --global-link-color-visited         : #{$sunrise-link-dark};
+    --global-masthead-link-color        : #{$sunrise-text};
+    --global-masthead-link-color-hover  : #{$sunrise-text-muted};
+    --global-text-color                 : #{$sunrise-text};
+    --global-text-color-light           : #{$sunrise-text-muted};
+    --global-thead-color                : #{$sunrise-background-light};
 }
