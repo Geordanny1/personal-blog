@@ -7,12 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-I'm Geordanny. A current student of computer science at [Nothern Essex Community College](https://necc.edu/).
+I'm a current student of computer science at [Nothern Essex Community College](https://necc.edu/){:target="_black"}
 
-In this blog I'm gonna be posting things relate to my interests and my general experience in college .
+In this web-site I'm gonna be sharing things relate to my studies and my
+general experiences in college. I will aslo problary share whatever comes to my
+mind that I think might be useful to someone else, things like emacs or nvim.
 
 My areas of interests are:
 - Programming
+- Math (completely idiot at this for now)
+- Arduino
 - Music
 - Chess
 - Languages
