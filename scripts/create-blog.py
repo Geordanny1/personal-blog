@@ -4,18 +4,15 @@ from datetime import datetime
 from os import path
 import string, argparse, os.path
 
+title = input("what is gonna be the tittle for this post?\n(run this on the home directory)").replace(" ", "-")
 
-
-
-title = input("what is gonna be the tittle for this post?\n").replace(" ", "-")
-
-save_path = "../_posts/"
+save_path = "_posts/"
 
 parser = argparse.ArgumentParser(description="create a template for a blog")
 date = datetime.now()
 
 data = {
-    "title" : title,
+    "title" : title.replace("-", " "),
     "date" : date.strftime("%Y-%m-%d"),
     "permalink" : f"posts/{date.strftime("%Y")}/{date.strftime("%m")}/{title}/"
 }
